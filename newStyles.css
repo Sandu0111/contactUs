@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+   .background-color {
+     width: 100vw; 
+    height: 100%;
+    background: linear-gradient(180deg, rgba(224, 213, 253, 1) 60%, rgba(87, 120, 246, 1) 100%);
+    position: relative;
+  } 
+  
+  .background-image {
+      position: relative;
+    width: 100%;
+    height: 120vh;
+    background-image: url('assets/Vector 1.png');
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+    
+  } 
+  .form_class{
+    position: absolute;
+    bottom: 2%;
+  }
+  .col-form-label{
+    color: #4D3A99;
+    font-size: 24px;
+    font-family: Manrope;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  .form-control {
+    background-color: #EFE9FF !important; 
+    border-radius: 32px !important;
+    height: 62px;
+    
+}
+
+input[type="text"].form-control{
+    height: 62px;
+}
+
+  .form_class{
+    margin-bottom: 3%;
+  }
+  .images {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .images img {
+    max-width: 100px;
+  }
+  
+.BNcontainer{
+    display: none; 
+            flex-direction: column; 
+            width: 60%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        z-index: 5;
+        
+            
+}
+.bottom_nav ::before{
+    background-color: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+}
+.bottom_nav { 
+    background-color: #37227056; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    position: fixed; 
+    opacity: 100%;
+    bottom: 4%; 
+    width: 60%; 
+    z-index: 9999999;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+   
+   
+} 
+.bottom_nav:hover{
+    opacity: 100%;
+}
+.bottom_nav a { 
+    color: #fff; 
+    text-align: center; 
+    padding: 15px 10px; 
+    text-decoration: none; 
+    font-size: 17px; 
+    opacity: 80%;
+} 
+
+.bottom_nav a:hover { 
+    color: #c04be2;
+    border-radius: 10px; 
+    opacity: 100%;
+    
+   
+} 
+
+.bottom_nav a .icon { 
+    margin-right: 8px; 
+}
+.mobile_view{
+    display: none;
+}
+.arrow_img{
+    max-width: 80px;padding-top: 40%;
+}
+@media only screen and (max-width: 576px){
+    .web_view{
+        display: none;
+    }
+    .mobile_view{
+        display: block;
+    }
+    .background-image{
+        background-size: 100% 80%;
+    }
+    .images img {
+        max-width: 60px;
+      }
+    .arrow_img{
+        max-width: 40px;
+        padding-top: 20%;
+    }
+}
